@@ -48,7 +48,7 @@ make -j *코어 수*
 nullb0에 ZoneFS를 설치(커널 5.6.0버전 이후부터 지원)하고, znsdir을 nullb0의 마운팅 포인트로 지정합니다.
 정상적으로 ZoneFS가 설치되고 마운트 되었다면 znsdir 디렉토리엔 cnv 디렉토리와 seq 디렉토리가 생성됩니다.
 ``` bash
-./zonefs-tools/mkzonefs /dev/nullb0
+./zonefs-tools/src/mkzonefs /dev/nullb0
 mkdir znsdir
 ./util-linux/mount --source=/dev/nullb0 --target=znsdir
 ls znsdir
