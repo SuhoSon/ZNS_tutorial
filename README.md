@@ -1,4 +1,4 @@
-# ZNS
+# ZNS tutorial
 
 ## ZNS를 위한 커널 config 수정
 ZNS를 사용하기 위해선 latest stable version의 커널을 사용하는 것이 추천됩니다.
