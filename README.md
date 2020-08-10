@@ -1,6 +1,6 @@
 # ZNS
 
-## ZNS를 위한 커널 config 
+## ZNS를 위한 커널 config 수정
 ZNS를 사용하기 위해선 latest stable version의 커널을 사용하는 것이 추천됩니다.
 .config 파일에서 아래 옵션들을 설정해 주시면 됩니다. (커널 5.7.14 버전 기준)
 ``` bash
