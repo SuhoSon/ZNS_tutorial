@@ -24,7 +24,8 @@ CONFIG_DM_ZONED=y
 
 ## ZNS를 emulate 하는 방법
 
-![ZNS를 emulate 하는 방법 링크](./ZNS-emulate/ZNS-emulate.md)
+![ZNS를 nullblk로 emulate 하는 방법 링크](./ZNS-emulate/ZNS-emulate-nullblk.md)
+![ZNS를 xNVMe로 emulate 하는 방법 링크](./ZNS-emulate/ZNS-emulate-xNVMe.md)
 
 ## ZNS 관련 tool 설치
 
