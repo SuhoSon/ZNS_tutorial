@@ -6,7 +6,7 @@
 ```
 
 ### ZNS 정보 출력
-`/dev/nullb0`의 정보 출력을 위해선 ![ZNS tool](../ZNS-tools/ZNS-tools-isntall.md)을 통해 설치한 blkzone을 사용하시면 됩니다.
+`/dev/nullb0`의 정보 출력을 위해선 ![ZNS tool](../ZNS-tools/ZNS-tools-install.md)을 통해 설치한 blkzone을 사용하시면 됩니다.
 ``` bash
 ./util-linux/blkzone report /dev/nullb0
 ```
