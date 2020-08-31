@@ -3,7 +3,7 @@ latest stable version 커널로 부팅 후, blkzone을 위해 util-linux를 설�
 ``` bash
 git clone https://github.com/karelzak/util-linux.git
 cd util-linux
-apt install autoconf autopoint libblkid-dev -y
+apt install autoconf autopoint libblkid-dev libtool -y
 ./autogen.sh
 ./configure
 make -j *코어 수*
