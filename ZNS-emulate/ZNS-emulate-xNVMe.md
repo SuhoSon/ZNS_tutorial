@@ -5,7 +5,7 @@
 테스트 결과는 html 파일로 생성됩니다.
 
 ``` bash
-docker prune --force --filter "label=xNVMe-net"
+docker network prune --force --filter "label=xNVMe-net"
 docker network create --label xnvme xnvme_test_net
 docker pull refenv/qemu-nvme:latest
 docker create --name xnvme-test --label xnvme --workdir /__w/xNVMe/xNVMe --network xnvme_test_net --privileged -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/opt/ghar/_work":"/__w" -v "/opt/ghar/externals":"/__e":ro -v "/opt/ghar/_work/_temp":"/__w/_temp" -v "/opt/ghar/_work/_actions":"/__w/_actions" -v "/opt/ghar/_work/_tool":"/__w/_tool" -v "/opt/ghar/_work/_temp/_github_home":"/github/home" -v "/opt/ghar/_work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" refenv/qemu-nvme:latest "-f" "/dev/null"
