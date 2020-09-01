@@ -1,5 +1,5 @@
 ## xNVMe를 통해 ZNS 생성
-![xNVMe](https://github.com/OpenMPDK)는 NVMe device를 위한 크로스 플랫폼 라이브러리입니다.
+![xNVMe](https://github.com/OpenMPDK/xNVMe)는 NVMe device를 위한 크로스 플랫폼 라이브러리입니다.
 리눅스 환경에서 아래 순서로 커맨드를 입력하시면 ZNS SSD를 생성하고 테스트해볼 수 있습니다.
 앞에 > 표시가 있는 것은 docker container 안에서 입력되는 커맨드입니다.
 테스트 결과는 html 파일로 생성됩니다.
