@@ -48,7 +48,7 @@ docker exec -it xnvme-test bash
 > cd /__w/xNVMe/xNVMe/xNVMe
 > apt install -y cmake meson libcunit1-dev libnuma-dev libssl-dev libncurses5-dev 
 > make
-> ssh::push "third-party/fio/repos/fio" "/opt/aux"
+> ssh::push "/__w/xNVMe/xNVMe/xNVMe/third-party/fio/repos/fio" "/opt/aux/"
 > cij_runner $CIJ_TESTPLANS/xnvme-base-linux.plan ${TARGET_ENV} --output ${RESULTS}/base
 > cij_runner $CIJ_TESTPLANS/xnvme-lblk-linux.plan ${TARGET_ENV} --output ${RESULTS}/lblk
 > cij_runner $CIJ_TESTPLANS/xnvme-zoned-linux.plan ${TARGET_ENV} --output ${RESULTS}/zoned
