@@ -40,10 +40,15 @@ docker exec -it xnvme-test bash
 > wget https://github.com/OpenMPDK/xNVMe/releases/download/v0.0.19/xnvme-0.0.19.bin-tests.deb
 > wget https://github.com/OpenMPDK/xNVMe/releases/download/v0.0.19/xnvme-0.0.19.bin-tools.deb
 > for deb in *.deb; do
-  ssh:push "$deb" "/tmp/"
+  ssh::push "$deb" "/tmp/"
   done
 > ssh::cmd "dpkg -i /tmp/*.deb"
 > source /opt/scripts/suitup.sh
+> git clone https://github.com/OpenMPDK/xNVMe.git --recursive
+> cd /__w/xNVMe/xNVMe/xNVMe
+> apt install -y cmake meson libcunit1-dev libnuma-dev libssl-dev libncurses5-dev 
+> make
+> ssh::push "third-party/fio/repos/fio" "/opt/aux"
 > cij_runner $CIJ_TESTPLANS/xnvme-base-linux.plan ${TARGET_ENV} --output ${RESULTS}/base
 > cij_runner $CIJ_TESTPLANS/xnvme-lblk-linux.plan ${TARGET_ENV} --output ${RESULTS}/lblk
 > cij_runner $CIJ_TESTPLANS/xnvme-zoned-linux.plan ${TARGET_ENV} --output ${RESULTS}/zoned
