@@ -24,9 +24,9 @@ docker exec -it xnvme-test bash
 > pip3 uninstall -y cijoe
 > pip3 install --pre cijoe
 > pip3 install --pre cijoe-pkg-xnvme
-> mkdir -p {RESULTS}/base
-> mkdir -p {RESULTS}/lblk
-> mkdir -p {RESULTS}/zoned
+> mkdir -p ${RESULTS}/base
+> mkdir -p ${RESULTS}/lblk
+> mkdir -p ${RESULTS}/zoned
 > source /opt/scripts/suitup.sh
 > qemu::img_from_url "${CLOUD_IMG_URL}"
 > source /opt/scripts/suitup.sh
