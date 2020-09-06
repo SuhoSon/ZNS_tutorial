@@ -4,6 +4,9 @@
 앞에 > 표시가 있는 것은 docker container 안에서 입력되는 커맨드입니다.
 테스트 결과는 html 파일로 생성됩니다.
 
+이 내용은 [링크](https://github.com/OpenMPDK/xNVMe/runs/1065843776?check_suite_focus=true)
+내용을 기반으로 합니다.
+
 ``` bash
 docker network prune --force --filter "label=xNVMe-net"
 docker network create --label xNVMe-net xNVMe-net
